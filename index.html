@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imgs/logoArqComp2.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/style.css">
+    <title>HOME || CONVERSOR</title>
+</head>
+
+<body>
+    <div class="contentHeader">
+        <span class="LogotipoHeader">
+            Conversor de <span>bases</span>
+        </span>
+    </div>
+    <div class="contentMain">
+        <div class="TitleMain">Converta sua base <br> em um só lugar ...</div>
+        <div class="divContentConvert">
+            <div class="divConvert">
+                <div class="divInput">
+                    <div class="divinputIN">
+                        <div class="divsInput">
+                            <input placeholder="Decimal" type="text" id="inputDecimal">
+                        </div>
+                    </div>
+                    <button onclick="converterOctal()">Octal</button>
+                    <button onclick="converterHexa()">Hexa</button>
+                    <button onclick="converterBin()">Bin</button>
+                    <button onclick="Reset()">Nova Conversão</button>
+
+
+                </div>
+                <div class="divContentresult">
+                    <div class="decContent" id="decContent"></div>
+                    <div class="octalContent" id="octalContent"></div>
+                    <div class="hexaContent" id="hexaContent"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="scripts/conversao.js"></script>
